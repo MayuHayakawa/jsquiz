@@ -8,8 +8,10 @@ let y = "Tigger";
 let z = y;
 y = x;
 x = z;
-```
+
 x = Tigger
+
+```
 ---
  
 ###### Question 2:
@@ -119,9 +121,9 @@ What will the results of the expressions be inside if(...)?
  
 ???
 ```js
-if (-1 || 0) alert( 'first' ); true
-if (-1 && 0) alert( 'second' ); falth
-if (null || -1 && 1) alert( 'third' ); true
+if (-1 || 0) alert( 'first' ); -> true
+if (-1 && 0) alert( 'second' ); -> falth
+if (null || -1 && 1) alert( 'third' ); -> true
 ```
  
 ---
@@ -144,24 +146,24 @@ Refer to the schema below:
 ![flow-chart](./flow-chart.png)
 
 ```js
-function nameCheck(name) {
-    if (name == 'Admin') {
-        prompt('Password?');
-    } else if (name == '') {
-        prompt('canceled');
-    } else {
-        prompt(`I don't know you`);
-    }
+let name = window.prompt(`Who's there?`);
+if (name == 'Admin') {
+    console.log('aaa');
+    askPass();
+} else if (!name) {
+    window.alert('Canceled');
+} else {
+    window.alert(`I don't know you`);
 }
 
-function passwordCheck(pass) {
+function askPass() {
+    let pass = window.prompt('Password?');
     if (pass == 'TheMaster') {
-        prompt('Welcome!');
-    } else if (pass == '') {
-        prompt('canceled');
+        window.alert('Welcome!');
+    } else if (!pass) {
+        window.alert('Canceled');
     } else {
-        prompt('Wrong password');
+        window.alert('Wrong password');
     }
 }
-
 ```

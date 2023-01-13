@@ -82,25 +82,4 @@ function a() {
 a();
 // ------------------------------------------------
 
-// ------------------------------------------------
-function nameCheck(name, pass) {
-    if (name == 'Admin') {
-        console.log('Password?');
-        if (pass == 'TheMaster') {
-            console.log('Welcome!');
-        } else if (pass == '') {
-            console.log('canceled');
-        } else {
-            console.log('Wrong password');
-        }
-    } else if (name == '') {
-        console.log('canceled');
-    } else {
-        console.log(`I don't know you`);
-    }
-}
-
-nameCheck('Admin', 'TheMaster')
-// ------------------------------------------------
-
 
