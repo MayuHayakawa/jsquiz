@@ -16,7 +16,7 @@ greeting();
 // D: undefined and ReferenceError
 
 // Ans: Hana and ReferenceError (B)
-// Short explanation: var can be used everywhere be created but let need to be created before call it.
+// Short explanation: var can be created everywhere but let need to be created before call it.
 ```
 ###### Question 2: What's the output?
 
@@ -46,7 +46,7 @@ sum(1, "2");
 // D: 3
 
 // Ans: 3 (D)
-// Short explanation:
+// Short explanation: inside sum() everything becomes number, then 2 becomes number
 ```
 ###### Question 4: What's the output?
 
@@ -105,7 +105,7 @@ const num = parseInt("7*6", 10);
 // D: NaN
 
 // Ans: (C)
-// Short explanation: parseInt() is make first argument changes number from string(this case is just 7) referd second argument as radix.
+// Short explanation: parseInt() changes first argument number from string refering second argument as radix. In this case just 7 is argument because * is not number) 
 ```
 
 ###### Question 8:
